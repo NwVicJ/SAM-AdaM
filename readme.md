@@ -16,11 +16,15 @@ cd DawnNet
 ```
 ```bash
 # Create a conda environment
-conda create -n dawnnet python=3.8.20
+conda create -n sam-adam python=3.9
 
 # Activate the environment
-conda activate dawnnet
+conda activate sam-adam
+
+pip install torch==1.13.0+cu116 torchvision==0.14.0+cu116 torchaudio==0.13.0+cu116 \
+    --extra-index-url https://download.pytorch.org/whl/cu116
 
 # Install dependencies
 pip install -r requirements.txt
+
 ```
